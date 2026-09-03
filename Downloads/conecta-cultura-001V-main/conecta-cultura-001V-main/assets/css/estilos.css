@@ -1,4 +1,3 @@
-
 :root {
 
   --color-primario: #145da0;
@@ -30,6 +29,7 @@
 }
 
 
+
 *,
 
 *::before,
@@ -41,11 +41,13 @@
 }
 
 
+
 html {
 
   scroll-behavior: smooth;
 
 }
+
 
 
 body {
@@ -65,6 +67,7 @@ body {
 }
 
 
+
 img,
 
 video {
@@ -77,11 +80,15 @@ video {
 
 }
 
+
+
 a {
 
   color: var(--color-primario);
 
 }
+
+
 
 h1,
 
@@ -95,11 +102,14 @@ h3 {
 
 }
 
+
+
 section + section {
 
   margin-top: 3rem;
 
 }
+
 
 
 header,
@@ -112,6 +122,8 @@ footer {
 
 }
 
+
+
 main {
 
   width: 90%;
@@ -121,6 +133,8 @@ main {
   margin-inline: auto;
 
 }
+
+
 
 .cabecera-sitio {
 
@@ -138,6 +152,8 @@ main {
 
 }
 
+
+
 .marca {
 
   color: #ffffff;
@@ -150,9 +166,31 @@ main {
 
 }
 
+
+
+.boton-menu {
+
+  display: inline-block;
+
+  padding: 0.65rem 0.85rem;
+
+  font-size: 1.5rem;
+
+  background-color: #ffffff;
+
+  border: 0.1rem solid var(--color-primario-oscuro);
+
+  border-radius: 0.35rem;
+
+  cursor: pointer;
+
+}
+
+
+
 .menu {
 
-  display: flex;
+  display: none;
 
   flex-direction: column;
 
@@ -165,6 +203,16 @@ main {
   list-style: none;
 
 }
+
+
+
+.menu.menu-abierto {
+
+  display: flex;
+
+}
+
+
 
 .menu a {
 
@@ -180,6 +228,8 @@ main {
 
 }
 
+
+
 .menu a:hover,
 
 .menu a[aria-current="page"] {
@@ -187,6 +237,8 @@ main {
   background: var(--color-primario);
 
 }
+
+
 
 @media (min-width: 48rem) {
 
@@ -204,13 +256,25 @@ main {
 
   .menu {
 
+    display: flex;
+
     flex-direction: row;
 
     flex-wrap: wrap;
 
   }
 
+
+
+  .boton-menu {
+
+    display: none;
+
+  }
+
 }
+
+
 
 .etiqueta {
 
@@ -230,11 +294,15 @@ main {
 
 }
 
+
+
 .encabezado-pagina {
 
   margin-bottom: 2rem;
 
 }
+
+
 
 .tarjeta,
 
@@ -253,6 +321,8 @@ main {
   box-shadow: var(--sombra);
 
 }
+
+
 
 .boton,
 
@@ -282,6 +352,8 @@ button {
 
 }
 
+
+
 .boton:hover,
 
 button:hover {
@@ -289,6 +361,8 @@ button:hover {
   background: var(--color-primario-oscuro);
 
 }
+
+
 
 .boton--secundario {
 
@@ -300,6 +374,8 @@ button:hover {
 
 }
 
+
+
 .boton--secundario:hover {
 
   color: #ffffff;
@@ -307,6 +383,7 @@ button:hover {
   background: var(--color-primario-oscuro);
 
 }
+
 
 
 .grilla-tarjetas {
@@ -319,6 +396,8 @@ button:hover {
 
 }
 
+
+
 @media (min-width: 48rem) {
 
   .grilla-tarjetas {
@@ -329,6 +408,8 @@ button:hover {
 
 }
 
+
+
 @media (min-width: 64rem) {
 
   .grilla-tarjetas {
@@ -338,6 +419,8 @@ button:hover {
   }
 
 }
+
+
 
 .pie-sitio {
 
@@ -353,6 +436,8 @@ button:hover {
 
 }
 
+
+
 .tabla-contenedor {
 
   max-width: 100%;
@@ -360,6 +445,7 @@ button:hover {
   overflow-x: auto;
 
 }
+
 
 
 table {
@@ -371,6 +457,8 @@ table {
   background: var(--color-superficie);
 
 }
+
+
 
 caption,
 
@@ -384,6 +472,8 @@ td {
 
 }
 
+
+
 th,
 
 td {
@@ -392,6 +482,8 @@ td {
 
 }
 
+
+
 thead {
 
   color: #ffffff;
@@ -399,6 +491,8 @@ thead {
   background: var(--color-primario);
 
 }
+
+
 
 .formulario {
 
@@ -410,6 +504,8 @@ thead {
 
 }
 
+
+
 .formulario fieldset {
 
   display: grid;
@@ -417,6 +513,8 @@ thead {
   gap: 0.75rem;
 
 }
+
+
 
 .formulario input,
 
@@ -440,6 +538,8 @@ thead {
 
 }
 
+
+
 .formulario input[type="radio"],
 
 .formulario input[type="checkbox"] {
@@ -447,6 +547,8 @@ thead {
   width: auto;
 
 }
+
+
 
 video,
 
@@ -458,6 +560,8 @@ iframe {
 
 }
 
+
+
 iframe {
 
   aspect-ratio: 16 / 9;
@@ -466,6 +570,8 @@ iframe {
 
 }
 
+
+
 :focus-visible {
 
   outline: 3px solid var(--color-acento);
@@ -473,6 +579,8 @@ iframe {
   outline-offset: 3px;
 
 }
+
+
 
 input:required,
 
@@ -484,6 +592,8 @@ textarea:required {
 
 }
 
+
+
 input:focus,
 
 select:focus,
@@ -493,6 +603,8 @@ textarea:focus {
   border-color: var(--color-primario);
 
 }
+
+
 
 .salto-contenido {
 
@@ -508,8 +620,37 @@ textarea:focus {
 
 }
 
+
+
 .salto-contenido:focus {
 
   transform: translateY(0);
 
+}
+
+
+.filtros {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.75rem;
+
+  margin-bottom: 1.5rem;
+
+}
+
+
+
+.aviso-cupos {
+  color: #8a4b08;
+  font-weight: 700;
+}
+
+
+
+.actividad-completa {
+  color: #b42318;
+  font-weight: 700;
 }
