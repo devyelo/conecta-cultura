@@ -1,180 +1,303 @@
-<!DOCTYPE html>
+!DOCTYPE html>
+
+
 
 <html lang="es">
 
+
+
 <head>
+
+
 
  <meta charset="UTF-8">
 
+
+
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
  <meta name="description" content="Talleres y actividades de Conecta Cultura">
 
+
+
  <title>Inicio | Conecta Cultura</title>
+
+
 
  <link rel="stylesheet" href="assets/css/estilos.css">
 
+
+
 </head>
+
+
 
 <body>
 
+
+
  <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
+
+
 
  <header class="cabecera-sitio">
 
+
+
   <a class="marca" href="index.html">Conecta Cultura</a>
 
-  <button
 
- id="boton-menu"
 
- class="boton-menu"
-
- type="button"
-
- aria-label="Abrir o cerrar menú principal"
-
- aria-controls="menu-principal"
-
- aria-expanded="false">
-
- <span aria-hidden="true">☰</span>
-
-</button>
+  <nav aria-label="Navegación principal">
 
 
 
-<nav id="menu-principal" class="menu" aria-label="Navegación principal">
+   <button
 
- <a href="index.html">Inicio</a>
+    id="boton-menu"
 
- <a href="nosotros.html">Nosotros</a>
+    class="boton-menu"
 
- <a href="agenda.html">Agenda</a>
+    type="button"
 
- <a href="participar.html">Participar</a>
+    aria-label="Abrir o cerrar menú principal"
 
-</nav>
+    aria-controls="menu-principal"
+
+    aria-expanded="false">
+
+    <span aria-hidden="true">☰</span>
+
+   </button>
+
+
+
+   <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+
+    <a href="index.html">Inicio</a>
+
+    <a href="nosotros.html">Nosotros</a>
+
+    <a href="agenda.html">Agenda</a>
+
+    <a href="participar.html">Participar</a>
+
+    <a href="registro.html">Registro</a>
+
+  </nav>
+
+
+
+
+
+   
+
+
+
+  </nav>
 
 
 
  </header>
 
+ 
+
+
+
+
+
 
 
  <main id="contenido-principal">
 
+
+
   <section class="presentacion">
+
+
 
    <p class="etiqueta">Aprendizaje y comunidad</p>
 
+
+
    <h1 id="titulo-cartelera">Agenda cultural</h1>
+
+
 
    <button id="boton-destacar" type="button">Destacar título</button>
 
-   
+
 
    <p>Descubre talleres locales de cultura, tecnología y bienestar.</p>
 
+
+
    <a class="boton" href="noticias.html">Explorar novedades</a>
 
+
+
   </section>
+
+
+
+
 
 
 
   <section aria-labelledby="titulo-actividades">
 
+
+
    <h2 id="titulo-actividades">Actividades destacadas</h2>
+
+
 
    <div class="grilla-tarjetas">
 
+
+
     <article class="tarjeta">
+
+
 
      <img src="assets/img/fotografia.jpg"
 
+
+
         alt="Participantes fotografiando edificios del barrio">
+
+
 
      <h3>Fotografía urbana</h3>
 
+
+
      <p>Aprende composición mientras documentas tu entorno.</p>
 
-     <a href="noticias-detalle-1.html">Conocer el taller</a>
+
+
+     <a href="noticia-detalle-1.html">Conocer el taller</a>
+
+
 
     </article>
+
+
 
     <article class="tarjeta">
 
+
+
      <img src="assets/img/huerto.jpg"
+
+
 
         alt="Manos plantando una hierba en un huerto comunitario">
 
+
+
      <h3>Huerto comunitario</h3>
+
+
 
      <p>Comparte técnicas de cultivo sustentable con tus vecinos.</p>
 
-     <a href="noticias-detalle-2.html">Conocer la jornada</a>
+
+
+     <a href="noticia-detalle-2.html">Conocer la jornada</a>
+
+
 
     </article>
-
-   <article class="tarjeta">
-
-    <img
-
-    src="assets/img/programacion.jpg"
-
-  alt="Persona aprendiendo programación básica frente a un computador">
-
- <h3>Programación básica</h3>
-
-     <p>
-
-  Aprende conceptos básicos de programación en una actividad
-
-  pensada para personas que están comenzando.
-
-    </p>
-
-     <a href="noticias.html">Conocer la actividad de programación</a>
-
-   </article>
 
 
 
    </div>
 
+
+
   </section>
 
-<button id="mostrar-todas" type="button">Todas</button>
-<button id="mostrar-disponibles" type="button">
-Con cupos
-</button>
 
-<section id="cartelera" class="rejilla-tarjetas"></section>
+
+  <button id="mostrar-todas" type="button">Todas</button>
+
+  <button id="mostrar-disponibles" type="button">
+
+   Con cupos
+
+  </button>
+
+
+
+  <section id="cartelera" class="rejilla-tarjetas"></section>
+
+
+
+
+
+
+
   <aside class="aviso" aria-labelledby="titulo-aviso">
+
+
 
    <h2 id="titulo-aviso">¿Quieres proponer una actividad?</h2>
 
+
+
    <p>Pronto habilitaremos un formulario para organizaciones locales.</p>
 
+
+
   </aside>
+
+
 
  </main>
 
 
+
+
+
+
+
  <footer class="pie-sitio">
+
+
 
   <p><strong>Conecta Cultura</strong></p>
 
+
+
   <address>Contacto: <a href="mailto:hola@conectacultura.cl">hola@conectacultura.cl</a></address>
+
+
 
   <p><small>Proyecto académico · Desarrollo FullStack II</small></p>
 
+
+
  </footer>
+
+
 
  <script src="assets/js/app.js"></script>
 
  <script src="assets/js/menu.js"></script>
 
+
+
 </body>
 
+
+
 </html>
+
+
+
+
+
+Escribir mensaje
